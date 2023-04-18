@@ -36,8 +36,8 @@ const Footer = () => {
         </div>
       </section>
 
-      <div className='bg-background_gray mt-28 px-12 py-8 xl:flex xl:justify-center'>
-        <ul className='flex flex-wrap justify-center sm:justify-start items-center gap-x-6 text-paragraph font-semibold xl:w-[85rem] xl:px-4'>
+      <div className='bg-background_gray mt-28 px-6 sm:px-12 py-8 xl:flex xl:justify-center'>
+        <ul className='flex flex-wrap justify-center sm:justify-start items-center  gap-x-6 text-paragraph font-semibold xl:w-[85rem] xl:px-4'>
           {footerFinal.map((el) => (
             <li key={el.id}>
               <button className='hover:text-black transition ease-in duration-200'>
