@@ -19,7 +19,7 @@ const Image = ({
         src={imgSrc}
         srcSet={`${imgSrc} ${
           imgBreakPoint - 1
-        }w, ${largeImgSrc} ${imgBreakPoint}w`}
+        }px, ${largeImgSrc} ${imgBreakPoint}px`}
         alt={alt}
         className='h-full w-full object-cover image-pixelated'
       />
