@@ -21,7 +21,7 @@ const GlobalAudience = () => {
           largeImgSrc='https://cdn.shopify.com/shopifycloud/shopify_dev/assets/home/home-new/global-audience/home-audience-light-67325b67f7b8d31cd66e258220100d6e4acee4e0d4a3c7c85f009133778ff33a.png'
           imgBreakPoint={1024}
           alt='shopify.dev-diversity'
-          customStyle='h-[30rem] image-pixelated lg:absolute lg:h-[36rem] lg:bottom-4 lg:-z-10'
+          customStyle='h-[30rem] image-pixelated lg:absolute xl:h-[36rem] lg:bottom-4 lg:-z-10'
         />
       </div>
 
