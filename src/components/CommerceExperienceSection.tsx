@@ -3,7 +3,7 @@ import { Heading, Image } from '../components';
 
 const CommerceExperienceSection = () => {
   return (
-    <div className='relative xl:mt-20 xl:mb-16 bg-background_gray xl:rounded-2xl xl:w-[94rem] xl:flex xl:justify-center'>
+    <div className='relative xl:mt-20 xl:mb-16 bg-background_gray xl:rounded-2xl xl:w-[94rem] overflow-hidden xl:flex xl:justify-center'>
       <Image
         imgSrc='https://cdn.shopify.com/shopifycloud/shopify_dev/assets/home/home-new/hero/hero-2-2x-e13e1c89ee3d48d230972cb4ab97012a8493223cd5260445513f1db76f654c57.png'
         largeImgSrc='https://cdn.shopify.com/shopifycloud/shopify_dev/assets/home/home-new/hero/hero-2-2x-e13e1c89ee3d48d230972cb4ab97012a8493223cd5260445513f1db76f654c57.png'
@@ -12,7 +12,7 @@ const CommerceExperienceSection = () => {
         customStyle='h-60 sm:h-96 xl:hidden'
       />
 
-      <section className='px-4 sm:px-14  py-10 xl:h-[40rem] xl:flex xl:flex-col xl:justify-center max-w-[85rem]'>
+      <section className='px-4 sm:px-14  py-10 xl:h-[40rem] xl:flex xl:flex-col xl:justify-center max-w-[85rem] '>
         <button className='xl:w-fit flex items-center gap-4 bg-black hover:text-black text-white px-3.5 py-3 rounded-[2rem] mb-10 hover:bg-bright_green transition ease-in duration-200 group'>
           <div className='sm:flex gap-1 '>
             <p className='font-bold'>Shopify Editions</p>

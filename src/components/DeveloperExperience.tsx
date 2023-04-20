@@ -3,7 +3,7 @@ import { Heading, Image } from '../components';
 
 const DeveloperExperience = () => {
   return (
-    <div className='xl:w-[94rem] bg-background_gray xl:py-10 xl:mt-20 xl:flex xl:justify-center xl:rounded-2xl'>
+    <div className='xl:w-[94rem] bg-background_gray xl:py-10 xl:mt-20 overflow-hidden xl:flex xl:justify-center xl:rounded-2xl'>
       <section className='px-4 sm:px-14 pt-20 sm:pt-30 sm:pb-24 pb-10 relative max-w-[85rem]'>
         <Heading heading={textContent[2].heading} />
 
