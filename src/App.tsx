@@ -15,7 +15,7 @@ function App() {
     <>
       <HamburgerFullscreen />
       <Navbar />
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center overflow-x-hidden'>
         <CommerceExperienceSection />
         <Companies />
         <ToolsSection />
