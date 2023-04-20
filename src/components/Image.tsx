@@ -15,15 +15,34 @@ const Image = ({
 }: ImagePropsI) => {
   return (
     <div className={`${customStyle}`}>
-      <img
-        src={imgSrc}
-        srcSet={`${largeImgSrc} ${imgBreakPoint}w`}
-        sizes={`(max-width: ${
-          imgBreakPoint - 1
-        }px) 100vw, ${imgBreakPoint}px, (min-width: ${imgBreakPoint}px) 100vw`}
-        alt={alt}
-        className='h-full w-full object-cover image-pixelated'
-      />
+      {imgBreakPoint === 1024 && (
+        <>
+          <img
+            src={imgSrc}
+            alt={alt}
+            className='h-full w-full object-cover image-pixelated lg:hidden'
+          />
+          <img
+            src={largeImgSrc}
+            alt={alt}
+            className='h-full w-full object-cover image-pixelated hidden lg:block'
+          />
+        </>
+      )}
+      {imgBreakPoint === 1280 && (
+        <>
+          <img
+            src={imgSrc}
+            alt={alt}
+            className='h-full w-full object-cover image-pixelated xl:hidden'
+          />
+          <img
+            src={largeImgSrc}
+            alt={alt}
+            className='h-full w-full object-cover image-pixelated hidden xl:block'
+          />
+        </>
+      )}
     </div>
   );
 };
