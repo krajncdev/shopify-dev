@@ -17,12 +17,8 @@ const Image = ({
     <div className={`${customStyle}`}>
       <img
         src={imgSrc}
-        srcSet={`${imgSrc} ${
-          imgBreakPoint - 1
-        }w, ${largeImgSrc} ${imgBreakPoint}w`}
-        sizes={`(max-width: ${imgBreakPoint - 1}px) ${
-          imgBreakPoint - 1
-        }px, ${imgBreakPoint}px`}
+        srcSet={`${largeImgSrc} ${imgBreakPoint}w`}
+        sizes={`(min-width: ${imgBreakPoint}px) 100vw, ${imgBreakPoint}px`}
         alt={alt}
         className='h-full w-full object-cover image-pixelated'
       />
