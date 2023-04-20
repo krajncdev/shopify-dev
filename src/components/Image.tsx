@@ -13,27 +13,18 @@ const Image = ({
   largeImgSrc,
   imgBreakPoint,
 }: ImagePropsI) => {
-  let mode;
-  switch (imgBreakPoint) {
-    case 1024:
-      mode = 'lg';
-      break;
-    case 1280:
-      mode = 'xl';
-      break;
-  }
-
   return (
     <div className={`${customStyle}`}>
       <img
         src={imgSrc}
+        srcSet={`${imgSrc} ${
+          imgBreakPoint - 1
+        }w, ${largeImgSrc} ${imgBreakPoint}w`}
+        sizes={`(max-width: ${imgBreakPoint - 1}px) ${
+          imgBreakPoint - 1
+        }px, ${imgBreakPoint}px`}
         alt={alt}
-        className={`h-full w-full object-cover image-pixelated ${mode}:hidden`}
-      />
-      <img
-        src={largeImgSrc}
-        alt={alt}
-        className={`h-full w-full object-cover image-pixelated ${mode}:block hidden`}
+        className='h-full w-full object-cover image-pixelated'
       />
     </div>
   );
